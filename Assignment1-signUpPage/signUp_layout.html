@@ -3,62 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <title>Sign Up</title>
     <link rel="stylesheet" href="style_signUp.css" />
   </head>
   <body>
-    <header>
-      <div class="title">
-        <h1>Sign Up</h1>
-      </div>
-    </header>
-    <main>
-      <form method="post">
-        <div class="row">
-          <input class="inputBox column" type="text" placeholder="First Name" />
-          <input class="inputBox column" type="text" placeholder="Last Name" />
+    <div class="form-container">
+      <h1 class="title">Sign Up</h1>
+      <!--form method="post" -->
+      <form class="form-group">
+        <input
+          id="firstName"
+          class="inputBox firstname"
+          type="text"
+          placeholder="First Name"
+        />
+        <input
+          id="lastName"
+          class="inputBox lastname"
+          type="text"
+          placeholder="Last Name"
+        />
+
+        <input class="inputBox mobile" type="text" placeholder="Mobile No." />
+
+        <input class="inputBox email" type="text" placeholder="Email Address" />
+
+        <input class="inputBox password" type="text" placeholder="Password" />
+        <input
+          class="inputBox confirm"
+          type="text"
+          placeholder="Confirm Password"
+        />
+
+        <div class="agreeBox">
+          <input type="checkbox" id="agree-box" name="I Agree" value="agree" />
+          <label for="agree-box">I Agree</label><br />
         </div>
 
-        <div class="row">
-          <input class="inputBox" type="text" placeholder="Mobile No." />
+        <div class="agreement">
+          By clicking <span class="btnRegister span-regis">Register</span>, you
+          agree to the <a href="#">Terms and Conditions</a> set cut by this
+          site, incuding our Cookie Use.
         </div>
 
-        <div class="row">
-          <input class="inputBox" type="text" placeholder="Email Address" />
-        </div>
-
-        <div class="row">
-          <input class="inputBox column" type="text" placeholder="Password" />
-          <input
-            class="inputBox column"
-            type="text"
-            placeholder="Confirm Password"
-          />
-        </div>
-
-        <div class="row">
-          <div class="agreeBox">
-            <input
-              type="checkbox"
-              id="agree-box"
-              name="I Agree"
-              value="agree"
-            />
-            <label for="agree-box">I Agree</label><br />
-          </div>
-          <span class="agreement">
-            By clicking <button class="btnRegister">Register</button>, you agree
-            to the <a href="#">Terms and Conditions</a> set cut by this site,
-            incuding our Cookie Use.
-          </span>
-        </div>
-
-        <div class="row">
-          <button class="button btnRegister" id="register">Register</button>
-          <button class="button btnSign" id="signin">Sign In</button>
-        </div>
+        <button class="button btnRegister" id="register">Register</button>
+        <button class="button btnSign" id="signin">Sign In</button>
       </form>
-    </main>
+    </div>
   </body>
 </html>
